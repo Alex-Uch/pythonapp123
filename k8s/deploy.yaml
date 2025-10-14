@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonapp123
+  labels:
+    app: pythonapp123
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythonapp123
+  template:
+    metadata:
+      labels:
+        app: pythonapp123
+    spec:
+      containers:
+        - name: pythonapp123
+          image: prachponleuuch/pythonapp123:v2
+          ports:
+            - containerPort: 5000

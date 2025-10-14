@@ -1,0 +1,13 @@
+site_name: 'pythonapp123'
+site_description: 'Main documentation for pythonapp123'
+repo_url: https://github.com/prachponleuuch/pythonapp123
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+
+# For sidebar navigation on https://backstage.io/, see `microsite/sidebars.js`
+nav:
+  - Overview:
+      - Getting Started: 'docs/index.md'
